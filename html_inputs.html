@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerbie Villanueva HTML Input Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="range"],
+        input[type="file"],
+        input[type="color"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="range"] {
+            width: calc(100% - 20px);
+        }
+
+        .checkbox-label,
+        .radio-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Input Element Demo</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Text Input</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </fieldset>
+
+        <fieldset>
+            <legend>Password Input</legend>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </fieldset>
+
+        <fieldset>
+            <legend>Email Input</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+        </fieldset>
+
+        <fieldset>
+            <legend>Number Input</legend>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your age">
+        </fieldset>
+
+        <fieldset>
+            <legend>Date Input</legend>
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </fieldset>
+
+        <fieldset>
+            <legend>Time Input</legend>
+            <label for="appointment">Appointment Time:</label>
+            <input type="time" id="appointment" name="appointment">
+        </fieldset>
+
+        <fieldset>
+            <legend>URL Input</legend>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder="Enter your website URL">
+        </fieldset>
+
+        <fieldset>
+            <legend>Telephone Input</legend>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </fieldset>
+
+        <fieldset>
+            <legend>Range Input</legend>
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+        </fieldset>
+
+        <fieldset>
+            <legend>Checkbox Input</legend>
+            <label class="checkbox-label">
+                <input type="checkbox" name="subscribe" value="newsletter"> Subscribe to newsletter
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio Input</legend>
+            <label class="radio-label">
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>File Input</legend>
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume">
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit Button</legend>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <fieldset>
+            <legend>Reset Button</legend>
+            <input type="reset" value="Reset">
+        </fieldset>
+
+        <fieldset>
+            <legend>Hidden Input</legend>
+            <input type="hidden" name="userId" value="12345">
+        </fieldset>
+
+        <fieldset>
+            <legend>Button Input</legend>
+            <input type="button" value="Click Me" onclick="alert('Button clicked!')">
+        </fieldset>
+
+        <fieldset>
+            <legend>Color Input</legend>
+            <label for="favoriteColor">Favorite Color:</label>
+            <input type="color" id="favoriteColor" name="favoriteColor">
+        </fieldset>
+    </form>
+</body>
+</html>
