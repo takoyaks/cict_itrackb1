@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation Demo</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Required Field</legend>
+            <label for="requiredField">This field is required:</label>
+            <input type="text" id="requiredField" name="requiredField" required>
+            <p class="error">This field is required.</p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Number Range</legend>
+            <label for="numberField">Number (between 1 and 100):</label>
+            <input type="number" id="numberField" name="numberField" min="1" max="100" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Text Length</legend>
+            <label for="textField">Text (min 5 characters, max 20 characters):</label>
+            <input type="text" id="textField" name="textField" minlength="5" maxlength="20" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pattern Match</legend>
+            <label for="patternField">Text (must be letters only):</label>
+            <input type="text" id="patternField" name="patternField" pattern="[A-Za-z]+" title="Letters only" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Step Increment</legend>
+            <label for="stepField">Number (increment by 0.1):</label>
+            <input type="number" id="stepField" name="stepField" step="0.1" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Date Input</legend>
+            <label for="dateField">Date:</label>
+            <input type="date" id="dateField" name="dateField" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Email Input</legend>
+            <label for="emailField">Email:</label>
+            <input type="email" id="emailField" name="emailField" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>URL Input</legend>
+            <label for="urlField">Website URL:</label>
+            <input type="url" id="urlField" name="urlField" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit Button</legend>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <fieldset>
+            <legend>Reset Button</legend>
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

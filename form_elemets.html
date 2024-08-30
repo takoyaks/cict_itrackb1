@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="file"],
+        input[type="color"],
+        textarea,
+        select,
+        datalist {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        meter {
+            width: 100%;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        progress {
+            width: 100%;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        output {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Elements Demo</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Text Area</legend>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Box</legend>
+            <label for="dropdown">Choose an option:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datalist</legend>
+            <label for="datalist">Choose a fruit:</label>
+            <input list="fruits" id="datalist" name="datalist" placeholder="Select a fruit">
+            <datalist id="fruits">
+                <option value="Apple">
+                <option value="Banana">
+                <option value="Cherry">
+                <option value="Date">
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Meter</legend>
+            <label for="meter">Progress (50%):</label>
+            <meter id="meter" value="0.5" min="0" max="1"></meter>
+        </fieldset>
+
+        <fieldset>
+            <legend>Progress</legend>
+            <label for="progress">Loading Progress:</label>
+            <progress id="progress" value="70" max="100"></progress>
+        </fieldset>
+
+        <fieldset>
+            <legend>Output</legend>
+            <label for="output">Result:</label>
+            <output id="output">Output will be displayed here</output>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit Button</legend>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <fieldset>
+            <legend>Reset Button</legend>
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
