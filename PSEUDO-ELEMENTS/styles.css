@@ -1,0 +1,103 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Pseudo-Element Example Container */
+  .pseudo-elements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .pseudo-element {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .pseudo-element p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* ::before and ::after */
+  .before-after-text::before {
+    content: '<< ';
+    color: #007BFF;
+  }
+  
+  .before-after-text::after {
+    content: ' >>';
+    color: #007BFF;
+  }
+  
+  /* ::first-line */
+  .first-line-text::first-line {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #32CD32;
+  }
+  
+  /* ::first-letter */
+  .first-letter-text::first-letter {
+    font-size: 2.5rem;
+    color: #FF6347;
+    font-weight: bold;
+  }
+  
+  /* ::selection */
+  .selection-text::selection {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  /* ::placeholder */
+  .placeholder-input {
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  .placeholder-input::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .placeholder-input:focus {
+    border-color: #32CD32;
+  }
+  
