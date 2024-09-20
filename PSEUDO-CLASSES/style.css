@@ -51,7 +51,7 @@
   }
   
   /* Buttons and Inputs */
-  button, input, ul {
+  button, input, ul, div {
     font-size: 1rem;
     padding: 10px;
     border-radius: 6px;
@@ -157,9 +157,26 @@
     font-weight: bold;
   }
   
+  /* :empty */
+  .empty-example {
+    height: 50px;
+    background-color: #ddd;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .empty-example:empty {
+    background-color: #ffeb3b;
+    border-color: #ff9800;
+    color: #333;
+  }
+  
   /* Add smooth transitions for hover/focus effects */
   button, input {
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
-  
   
