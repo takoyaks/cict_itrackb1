@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-Classes Demonstration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pseudo-Classes Demonstration</h1>
+
+    <div class="pseudo-classes">
+
+      <!-- :hover -->
+      <div class="pseudo-class">
+        <button class="hover-example">Hover over me</button>
+        <p>:hover - Change on hover</p>
+      </div>
+
+      <!-- :active -->
+      <div class="pseudo-class">
+        <button class="active-example">Click me</button>
+        <p>:active - Change on click</p>
+      </div>
+
+      <!-- :focus -->
+      <div class="pseudo-class">
+        <input type="text" class="focus-example" placeholder="Focus on me">
+        <p>:focus - Change on focus</p>
+      </div>
+
+      <!-- :not() -->
+      <div class="pseudo-class">
+        <ul class="not-example">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li class="special-item">Item 3 (Not selected)</li>
+          <li>Item 4</li>
+        </ul>
+        <p>:not() - Select elements that do not match a selector</p>
+      </div>
+
+      <!-- :nth-child() -->
+      <div class="pseudo-class">
+        <ul class="nth-child-example">
+          <li>First item</li>
+          <li>Second item (nth-child)</li>
+          <li>Third item</li>
+          <li>Fourth item</li>
+        </ul>
+        <p>:nth-child() - Target specific child element</p>
+      </div>
+
+      <!-- :first-child and :last-child -->
+      <div class="pseudo-class">
+        <ul class="first-last-child-example">
+          <li>First child</li>
+          <li>Middle child</li>
+          <li>Last child</li>
+        </ul>
+        <p>:first-child and :last-child - Style the first and last elements</p>
+      </div>
+
+      <!-- :nth-of-type() -->
+      <div class="pseudo-class">
+        <ul class="nth-of-type-example">
+          <li>First item</li>
+          <li
